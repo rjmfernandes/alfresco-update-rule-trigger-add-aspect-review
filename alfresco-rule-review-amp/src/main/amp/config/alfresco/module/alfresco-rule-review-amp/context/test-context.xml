@@ -20,15 +20,7 @@
 <beans>
     
     
-    <!--  test beans . only for tests purposes -->
-        <!-- Registration of new models --> 
-    <bean id="test.extension.dictionaryBootstrap" parent="dictionaryModelBootstrap" depends-on="dictionaryBootstrap">
-        <property name="models">
-            <list>
-                <value>alfresco/module/${artifactId}/test-model.xml</value>
-            </list>
-        </property>
-    </bean>
+    <!--  only for tests purposes -->
     
     <bean id="testrule.bootstrap" 
       class="org.alfresco.repo.module.ImporterModuleComponent" 
